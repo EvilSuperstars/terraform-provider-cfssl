@@ -9,7 +9,7 @@ This provider requires no configuration.
 ```hcl
 provider "cfssl" {}
 
-resource "cfssl_ca_cert" "foo" {
+resource "cfssl_self_signed_ca_cert" "foo" {
 }
 ```
 
@@ -24,10 +24,10 @@ See [CloudFlare's documentation](https://github.com/cloudflare/cfssl#generating-
 
 The following arguments are supported:
 
-* `csr` - (Required, string) The key request as a JSON string.
+* `csr_json` - (Required, string) The key request as a JSON string.
 
 #### Attributes Reference
 
 The following attributes are exported in addition to the above configuration:
 
-* `yaml` - (string) The YAML string
+* `out_json` - (string) The output json

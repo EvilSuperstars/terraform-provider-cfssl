@@ -1,49 +1,20 @@
 {
 	"comment": "",
-	"ignore": "",
+	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "Glt/qowgMuEmQdHidWFG/VrdHLc=",
+			"checksumSHA1": "3J6UBMjrZ1ufcx0RLv5hlCu1Gvk=",
 			"path": "github.com/cloudflare/cfssl",
 			"revision": "5d63dbd981b5c408effbb58c442d54761ff94fbd",
 			"revisionTime": "2018-03-22T20:28:35Z",
 			"tree": true
 		},
 		{
-			"checksumSHA1": "mdeqE00nlroD2prYypxQEc8NcCk=",
-			"path": "github.com/cloudflare/cfssl/crypto/pkcs7",
-			"revision": "5d63dbd981b5c408effbb58c442d54761ff94fbd",
-			"revisionTime": "2018-03-22T20:28:35Z"
-		},
-		{
-			"checksumSHA1": "HvR1PV4UK4nSzRiy6B4eSL6ua3M=",
-			"path": "github.com/cloudflare/cfssl/csr",
-			"revision": "5d63dbd981b5c408effbb58c442d54761ff94fbd",
-			"revisionTime": "2018-03-22T20:28:35Z"
-		},
-		{
-			"checksumSHA1": "re+eo2ZUnkSBC8Rogz+LeWD1dHM=",
-			"path": "github.com/cloudflare/cfssl/errors",
-			"revision": "5d63dbd981b5c408effbb58c442d54761ff94fbd",
-			"revisionTime": "2018-03-22T20:28:35Z"
-		},
-		{
-			"checksumSHA1": "mbcoRIPWOosZK5iQEb+82ctjh10=",
-			"path": "github.com/cloudflare/cfssl/helpers",
-			"revision": "5d63dbd981b5c408effbb58c442d54761ff94fbd",
-			"revisionTime": "2018-03-22T20:28:35Z"
-		},
-		{
-			"checksumSHA1": "hrI9ZAcwbjQ0FVHrpkxIKk4PdfQ=",
-			"path": "github.com/cloudflare/cfssl/helpers/derhelpers",
-			"revision": "5d63dbd981b5c408effbb58c442d54761ff94fbd",
-			"revisionTime": "2018-03-22T20:28:35Z"
-		},
-		{
-			"checksumSHA1": "bsjay99yxrifdZ6PeqWaTkuB/kk=",
-			"path": "github.com/cloudflare/cfssl/log",
-			"revision": "5d63dbd981b5c408effbb58c442d54761ff94fbd",
-			"revisionTime": "2018-03-22T20:28:35Z"
+			"checksumSHA1": "SmF3X9CPWKDp6pcK8co3E+M9Yn0=",
+			"path": "github.com/hashicorp/terraform",
+			"revision": "b2dae9b06ce9565eb9d020a510d7134e53afd050",
+			"revisionTime": "2018-02-14T22:15:46Z",
+			"tree": true
 		}
 	],
 	"rootPath": "github.com/EvilSuperstars/terraform-provider-cfssl"
