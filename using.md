@@ -9,21 +9,22 @@ This provider requires no configuration.
 ```hcl
 provider "cfssl" {}
 
-resource "cfssl_xxx" "foo" {
+resource "cfssl_ca_cert" "foo" {
 }
 ```
 
 ## Resources
 
-### `cfssl_xxx`
+### `cfssl_self_signed_ca_cert`
 
-Converts JSON to YAML.
+Generate a self-signed root CA certificate and private key.
+See [CloudFlare's documentation](https://github.com/cloudflare/cfssl#generating-self-signed-root-ca-certificate-and-private-key).
 
 #### Argument Reference
 
 The following arguments are supported:
 
-* `json` - (Required, string) The JSON string that is to be converted to YAML.
+* `csr` - (Required, string) The key request as a JSON string.
 
 #### Attributes Reference
 
