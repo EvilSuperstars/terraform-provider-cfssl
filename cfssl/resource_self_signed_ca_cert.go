@@ -24,7 +24,15 @@ func resourceSelfSignedCACert() *schema.Resource {
 				ValidateFunc:     validation.ValidateJsonString,
 				DiffSuppressFunc: jsonDiffSuppress,
 			},
-			"out_json": {
+			"cert": {
+				Type:     schema.TypeString,
+				Computed: true,
+			},
+			"csr": {
+				Type:     schema.TypeString,
+				Computed: true,
+			},
+			"key": {
 				Type:     schema.TypeString,
 				Computed: true,
 			},
@@ -46,23 +54,11 @@ func resourceSelfSignedCACertCreate(d *schema.ResourceData, meta interface{}) er
 	if err != nil {
 		return err
 	}
-	out := map[string]string{}
-	if cert != nil {
-		out["cert"] = string(cert)
-	}
-	if csrBytes != nil {
-		out["csr"] = string(csrBytes)
-	}
-	if key != nil {
-		out["key"] = string(key)
-	}
-	outJson, err := json.Marshal(out)
-	if err != nil {
-		return err
-	}
 
 	d.SetId(time.Now().UTC().String())
-	d.Set("out_json", string(outJson))
+	d.Set("cert", string(cert))
+	d.Set("csr", string(csrBytes))
+	d.Set("key", string(key))
 
 	return nil
 }
