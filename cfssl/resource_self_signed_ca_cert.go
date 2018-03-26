@@ -18,13 +18,11 @@ func resourceSelfSignedCACert() *schema.Resource {
 
 		Schema: map[string]*schema.Schema{
 			"csr_json": {
-				Type:         schema.TypeString,
-				Required:     true,
-				ForceNew:     true,
-				ValidateFunc: validation.ValidateJsonString,
-				DiffSuppressFunc: func(k, old, new string, d *schema.ResourceData) bool {
-					return true
-				},
+				Type:             schema.TypeString,
+				Required:         true,
+				ForceNew:         true,
+				ValidateFunc:     validation.ValidateJsonString,
+				DiffSuppressFunc: jsonDiffSuppress,
 			},
 			"out_json": {
 				Type:     schema.TypeString,
