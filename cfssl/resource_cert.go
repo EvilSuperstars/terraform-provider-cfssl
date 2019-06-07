@@ -33,10 +33,12 @@ func resourceCert() *schema.Resource {
 			"ca_cert": {
 				Type:     schema.TypeString,
 				Required: true,
+				ForceNew: true,
 			},
 			"ca_key": {
 				Type:     schema.TypeString,
 				Required: true,
+				ForceNew: true,
 			},
 			"cert": {
 				Type:     schema.TypeString,
